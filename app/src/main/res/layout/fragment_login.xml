@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/fragment_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginBottom="30dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="25dp"
+                    android:padding="16dp">
+
+                    <TextView
+                        android:id="@+id/welcomeText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Welcome!"
+                        android:textAlignment="center"
+                        android:textColor="@color/darkgrey"
+                        android:textSize="36sp"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/username"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/welcomeText"
+                        android:layout_marginTop="80dp"
+                        android:background="@color/grey"
+                        android:drawableLeft="@drawable/baseline_person_24"
+                        android:drawablePadding="8dp"
+                        android:hint="@string/username"
+                        android:padding="8dp"
+                        android:textColor="@color/darkgrey" />
+
+                    <EditText
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_below="@+id/username"
+                        android:layout_marginTop="30dp"
+                        android:background="@color/grey"
+                        android:drawableLeft="@drawable/baseline_lock_24"
+                        android:drawablePadding="8dp"
+                        android:hint="@string/password"
+                        android:inputType="textPassword"
+                        android:padding="8dp"
+                        android:textColor="@color/darkgrey" />
+
+                    <CheckBox
+                        android:id="@+id/Checkbox"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/password"
+                        android:layout_marginTop="20dp"
+                        android:text="@string/remembermecheckbox"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/forgotPassword"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/password"
+                        android:layout_alignParentEnd="true"
+                        android:layout_marginTop="35dp"
+                        android:text="@string/forgot_password"/>
+
+                    <Button
+                        android:id="@+id/loginButton"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/darkgrey"
+                        android:layout_below="@+id/Checkbox"
+                        android:text="@string/login"
+                        android:layout_marginTop="70dp"
+                        android:textAlignment="center" />
+
+                    <TextView
+                        android:id="@+id/registerText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/new_member_register"
+                        android:textAlignment="center"
+                        android:layout_below="@+id/loginButton"
+                        />
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </ScrollView>
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Penugasan4</string>
+    <string name="login">Login</string>
+    <string name="username">Username</string>
+    <string name="password">Password</string>
+    <string name="new_member_register">New Member? Register</string>
+    <string name="already_have_an_acc">Already Have an Account? Log in</string>
+    <string name="register">Register</string>
+    <string name="email">Email</string>
+    <string name="phone">Phone</string>
+    <string name="welcome_message">Welcome Username</string>
+    <string name="homepage_title">Homepage</string>
+    <string name="email_activation_message">Your <font color='#6200EE'>email</font> has been activated</string>
+    <string name="phone_registration_message">Your <font color='#6200EE'>phone</font> has been registered</string>
+    <string name="remembermecheckbox">Remember Me</string>
+    <string name="forgot_password">Forgot Password?</string>
+</resources>
